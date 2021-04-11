@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+        <title>Calculate This</title>
+    </head>
+    <body>
+        <header>
+            <h1> Salary Calculator</h1>
+        </header>
+        <main>
+            <section>
+                <h2> Add Employee Salary</h2>
+                <div>
+                    <input id="in-first-name" type="text" placeholder="first name"/>
+                    <input id="in-last-name" type="text" placeholder="last name"/>
+                    <input id="in-id-number" type="text" placeholder="id number"/>
+                    <input id="in-job-title" type="text" placeholder="job title"/>
+                    <input id="in-annual-salary" type="text" placeholder="annual salary"/>
+                    <button id="submit">Submit</button>
+                </div>
+            </section>
+                <h2>Employees</h2>
+            <table>
+                <thread>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>ID Number</th>
+                        <th>Job Title</th>
+                        <th>Annual Salary</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thread>
+                <tbody id="out-employees">
+                    <!--jQuery will fill in-->
+                </tbody>
+            </table>
+            <h3 id="totalMonth">Total Monthly: <span id="remainingMonthlyOut"></span></h3>
+        </main>
+    </body>
+</html>
