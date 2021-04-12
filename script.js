@@ -4,7 +4,7 @@ let employees = [];
 // created a variable called employees and set it to 0 
 //setting employees to 0 will allow me to render new employeers added from the dom
 let salary = [];
-const totalMonthly= 0;
+let totalMonthly= 0;
 // created a const called totalMonthly and set it to 0
 // totalMonthly will be where my salary is added up 
 $(document).ready(onReady);
@@ -81,8 +81,8 @@ function calculateRemainingMonthly(){
       //remainingMonthly data and use an if statement to see if the remainingMonthly 
       //is greater than 20000 if not then it continues with regular background color
       //if it is greater then 20000 then the background changes to red.
-        $(`#remainingMonthlyOut`).text(`${remainingMonthly}`);
-        if(remainingMonthly > 20000) {
+        $(`#remainingMonthlyOut`).text(`${newTotalMonthly}`);
+        if(newTotalMonthly > 20000) {
             $(`#totalMonth`).css("background-color", "red");
         }
 
@@ -91,7 +91,7 @@ function calculateRemainingMonthly(){
     //display remainingBudget
     let el = $( '#remainingMonthlyOut')
     el.empty();
-    el.append(remainingMonthly);
+    el.append(newTotalMonthly);
 }
 
   function clearInputFields(){
