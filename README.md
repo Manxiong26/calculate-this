@@ -7,6 +7,8 @@ A 'Submit' button should collect the form information, store the information to 
 
 Create a delete button that removes an employee from the DOM. For Base mode, it does **not** need to remove that Employee's salary from the reported total.
 
+![ScreenShot.png](ScreenShot.png)
+
 The problem I solved was getting the calculator to add up the salary and once it was over 20k the background of the Total Monthly will turn red. How I solved it was by using the if statements inside my calculatingRemaingMonthly function.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
