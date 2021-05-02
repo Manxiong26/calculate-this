@@ -72,7 +72,7 @@ function calculateRemainingMonthly(){
     let newTotalMonthly = 0;
     for(let i=0; i < employees.length; i++){
         //for each employee, add up total of all salary
-  newTotalMonthly += Number(employees[ i ].annualSalary);
+  newTotalMonthly += Number(employees[ i ].annualSalary/12);
 }//end for loop
     console.log('newTotalMonthly:', newTotalMonthly);
       //add remainingMonthly from totalMonthly for newTotalMonthly
